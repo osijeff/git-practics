@@ -289,3 +289,16 @@ console.log(age)
 console.log(Age)
 
 let name  = "jeff"
+
+
+document
+  .getElementById("register-form")
+  .addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const username =
+        document.getElementById("username").value;
+
+    alert(`Registration successful for ${username}`);
+});
